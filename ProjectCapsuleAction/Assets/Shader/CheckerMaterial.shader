@@ -38,17 +38,16 @@
 			fixed4 c = tex2D (_MainTex, IN.uv_MainTex+_Time.y*-0.02) * _Color;
 
 			
-			if (sin(IN.uv_MainTex.x*50 ) < 0)
+			if (sin(IN.uv_MainTex.x*100 ) < 0)
 			{
-				if (cos(IN.uv_MainTex.y * 50 ) > 0)
+				if (cos(IN.uv_MainTex.y * 100) > 0)
 				{
 					c = 1 - c;
-					
 				}
 			}
-			if (sin(IN.uv_MainTex.x * 50)  > 0)
+			if (sin(IN.uv_MainTex.x * 100)  > 0)
 			{
-				if (cos(IN.uv_MainTex.y * 50 ) < 0)
+				if (cos(IN.uv_MainTex.y * 100) < 0)
 				{
 					c = 1 - c;
 				}
